@@ -1,0 +1,33 @@
+@import "../../assets/scss/base";
+
+$box-shadow: 0 0 10px #ebebeb;
+$dash-border: 1px dashed rgba(226,226,226,1);
+.content80{
+    .topic-title{
+        font-weight:bold;
+        color: $theme-color;
+        margin: 1em 0;
+        font-size: 1.2em;
+    }
+    .topic{
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        padding: 1.2em 2em;
+        .topic-choose{
+            margin-bottom: 2em;
+            p{
+                color:rgba(52,64,82,1);
+            }
+            button{
+                margin-right: 1em;
+            }
+            .ant-input-group-wrapper{
+                width: 23%;
+                margin-right: 1em;
+            }
+            input{
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../assets/scss/base";
+@import "../../assets/css/que.css";
+$box-shadow: 0 0 10px #ebebeb;
+$dash-border: 1px dashed rgba(226,226,226,1);
+.content80{
+    .record{
+        margin-bottom: 1em;
+        background-color: $bg-color;
+        padding: 0 1.2em;
+        border: 1px solid rgba(226,226,226,1);
+        position: relative;
+        transition: all .3s;
+        .record-title{
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 1.5rem 0;
+            border-bottom: $dash-border;
+        }
+        .record-edit{
+            position: absolute;
+            right: 1em;
+            top: 2em;
+            a{
+                display: inline-block;
+                margin: 0 1.5em;
+            }
+        }
+        .record-d{
+            color: $font-grey;
+            margin-bottom: 10px;
+            i{
+                padding-right: 1em;
+                color: $theme-color;
+            }
+            span{
+                padding-right: 2em;
+            }
+        }
+        &:hover{
+            background-color: #ebf5ff;
+        }
+    }
+    .page{
+        margin: 2em;
+        text-align: right;
+    }
+}

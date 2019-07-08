@@ -1,0 +1,53 @@
+@import "../../assets/scss/base";
+.point{
+  width: calc(100% - 20px);
+  height: 100%;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  .point-header{
+    background: #344052;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    padding: 16px 40px 16px 20px;
+    font-size: 14px;
+    position: relative;
+    opacity: .9;
+    transition: all .3s;
+    .down{
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      font-size: 16px !important;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .point-content{
+    padding: .7em;
+    overflow: auto;
+    max-height: 500px;
+  }
+}
+
+.ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle{
+  width: auto;
+}
+.ant-tree li .ant-tree-node-content-wrapper{
+  padding: 0;
+}
+.ant-tree li{
+  padding: 0;
+}
+.ant-tree{
+  font-size: 14px;
+}
+.ant-tree > li:first-child{
+  padding-top: 0;
+}
+
+.ant-tree.ant-tree-show-line li{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

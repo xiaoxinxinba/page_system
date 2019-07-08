@@ -1,0 +1,154 @@
+@import "../../../assets/scss/base";
+@import "../../../assets/css/que.css";
+$box-shadow: 0 0 10px #ebebeb;
+$dash-border: 1px dashed rgba(226,226,226,1);
+.content80{
+    .class-manage{
+        background-color: #fff;
+        padding: 1em 2.5em;
+        box-shadow: $box-shadow;
+    }
+    .new-btn{
+        color: inherit;
+        height: 3em;
+        line-height: 3em;
+        padding: 0 1em;
+        i{
+            font-size: 1.8em;
+            opacity: .7;
+            vertical-align: middle;
+            transition: all .3s;
+        }
+        &:hover i{
+            opacity: 1;
+            transform: scale(1.1) rotate(5deg);
+        }
+    }
+    .my-class{
+        position: relative;
+        .my-class-list{
+            li{
+                margin-bottom: 1.2em;
+                span{
+                    display: inline-block;
+                    line-height: 2em;
+                    text-align: center;
+                    padding: 0 1.5em;
+                    border-top: 1px solid #b5b5b5;
+                    border-bottom: 1px solid #b5b5b5;
+                    position: relative;
+                    transition: all .3s;
+                    cursor: pointer;
+                    &:last-of-type{
+                        border-right: 1px solid #b5b5b5;
+                        border-top-right-radius: .3em;
+                        border-bottom-right-radius: .3em;
+                    }
+                    &:after{
+                        content: '';
+                        width: 1px;
+                        height: 1.6em;
+                        position: absolute;
+                        top: .2em;
+                        right: 0;
+                        background-color: #ccc;
+                    }
+                    &:first-of-type, &:last-of-type{
+                        &:after{
+                            width: 0;
+                        }
+                    }
+                    &:hover{
+                        background-color: #f5f5f5;
+                    }
+                }
+                .my-class-name{
+                    background-color: $theme-color;
+                    color: #fff;
+                    border-top: 1px solid $theme-color;
+                    border-bottom: 1px solid $theme-color;
+                    border-top-left-radius: .3em;
+                    border-bottom-left-radius: .3em;
+                    &:hover{
+                        background-color:$theme-color;
+                    }
+                }
+                &:nth-of-type(even){
+                    .my-class-name{
+                        background-color: $purple;
+                        border-top: 1px solid $purple;
+                        border-bottom: 1px solid $purple;
+                        &:hover{
+                            background-color:$purple;
+                        }
+                    }
+                }
+                a{
+                    opacity: 0;
+                    color: #666;
+                    transition: all .3s;
+                }
+                &:hover{
+                    a{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .new-class{
+            position: absolute;
+        }
+        .new-class{
+            position: absolute;
+            right: 1em;
+            top: 0;
+        }
+    }
+    .class-list{
+        position: relative;
+        .class-list-head{
+            margin-bottom: 2em;
+        }
+        .class-list-edit{
+            position: absolute;
+            right: 1em;
+            top: 0;
+        }
+    }
+}
+.group{
+    width: 100%;
+    display: flex;
+    li{
+        box-sizing: border-box;
+        //display: inline-block;
+        width: calc((100% - 48px)/4);
+        height: 300px;
+        border-right: 1px solid #e2e2e2;
+        &:last-of-type{
+            border-right: none;
+        }
+        .group-title{
+            text-align: center;
+            padding: 1em;
+            margin: 0 .5em;
+            border-bottom: $dash-border;
+        }
+        .group-list{
+            overflow: hidden;
+            padding: 1em .5em;
+            span{
+                display: inline-block;
+                padding: .3em 1em;
+                background-color: #8BC2FF;
+                color: #fff;
+                margin: .2em;
+                border: 2px solid #8BC2FF;
+                user-select: none;
+                &:hover{
+                    border-color: $theme-color;
+                }
+            }
+        }
+    }
+}

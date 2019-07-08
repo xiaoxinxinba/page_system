@@ -1,0 +1,83 @@
+.tree-node{
+    display: block;
+    margin: 4px;
+}
+.tree-node-parent{
+    text-indent: 20px;
+}
+
+ul li.treeName{
+    padding-left: 20px;
+    font-size: 16px;
+    position: relative;
+}
+ul li.treeName > span{
+    display: inline-block;
+    cursor: pointer;
+    /*width: 100%;*/
+    min-width: 420px;
+    padding: 4px 20px 4px 10px;
+    height: 100%;
+    transition: all .3s;
+}
+.tree-edit{
+    margin-left: 16px;
+    opacity: 0;
+}
+.edit-icon{
+    opacity: 0.6;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.edit-icon:hover{
+    opacity: 1;
+}
+ul li.treeName > span:hover, ul li.treeName > span:focus{
+    /*background-color: #ffe9de;*/
+    color: #398dda;
+}
+
+ul li.treeName > span .tree-edit>i:first-child{
+    padding: 0 4px;
+    font-size: 17px;
+}
+
+
+ul li.treeName > span:hover .tree-edit{
+    opacity: 1;
+}
+
+
+ul li.treeName:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0.8em;
+    height: 1.2em;
+    border-style: none none solid solid;
+    border-width: 0.08em;
+    border-color: #90caff;
+}
+ul li.treeName:not(:last-child):after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-style: none none none solid;
+    border-width: 0.08em;
+    border-color: #90caff;
+}
+.noChild {
+    transition: all .3s;
+}
+.noChild > ul{
+    display: none;
+}
+
+.input-width {
+    max-width: 300px;
+    display: inline-block;
+}

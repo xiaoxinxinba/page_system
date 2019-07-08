@@ -1,0 +1,136 @@
+.login-page{
+    position: fixed;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#DEF3F4;
+    z-index: 99;
+    .page-top{
+        width: 100%;
+        height: 70%;
+        background: #373C44 url("../../assets/img/login_1.png") bottom right no-repeat;
+    }
+    .page-content{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+        height: 60%;
+        background: #fff;
+        box-shadow:0px 6px 40px 0px rgba(47,155,255,0.24);
+        border-radius:4px;
+        .login-bg{
+            width: 65%;
+            height: 100%;
+            background: #DEF3F4 url("../../assets/img/login_bg.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        .login-btn{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 35%;
+            height: 100%;
+            text-align: center;
+            .title{
+                font-size:26px;
+                font-weight:400;
+                color:rgba(65,146,250,1);
+                line-height:54px;
+                margin-top: 40%;
+            }
+            .login-button{
+                width: 60%;
+                height: 44px;
+                color: #fff;
+                background:linear-gradient(90deg,rgba(47,155,255,1),rgba(93,132,243,1));
+                box-shadow:0px 10px 16px 0px rgba(47,155,255,0.2);
+                border-radius:5px;
+                border: none;
+                margin-top: 10%;
+                &:focus{
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+            .register{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 1em;
+            }
+        }
+    }
+    .login-foot{
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+        width: 100%;
+        h1{
+            font-size:34px;
+            font-weight:bold;
+            color:rgba(117,117,117,1);
+            margin-bottom: 20px;
+            text-shadow:0px 6px 6px rgba(0, 0, 0, 0.07);
+        }
+        p{
+            font-weight:400;
+            margin-bottom: 10px;
+            color:rgba(166,166,166,1);
+        }
+    }
+}
+
+
+@media screen and (max-width: 1500px){
+    .login-page {
+        .page-content {
+            .login-bg {
+                width: 60%;
+            }
+
+            .login-btn {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .login-page {
+        .page-content {
+            width: 80%;
+            left: 10%;
+            .login-bg {
+                width: 55%;
+            }
+
+            .login-btn {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .login-page {
+        .page-content {
+            width: 70%;
+            left: 15%;
+            .login-bg {
+                width: 0;
+            }
+
+            .login-btn {
+                width: 100%;
+            }
+        }
+    }
+    .login-page .login-foot h1 {
+        font-size: 24px;
+    }
+}

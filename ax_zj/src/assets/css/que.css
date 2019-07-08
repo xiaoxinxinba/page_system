@@ -1,0 +1,101 @@
+
+/*试题*/
+.artpreview fieldset { padding-top: 10px; font-size: 14px; clear: both; overflow: hidden; zoom: 1; line-height: 24px; font-family: 'Times New Roman',宋体,sans-serif; position: relative; }
+.artpreview fieldset legend { padding: 5px 0; display: block; margin: 5px; background: #f1f1f1; color: #000; overflow: hidden; zoom: 1; }
+.queserror { border: 1px dotted #f00; padding: 2px; }
+fieldset.quesborder {font-size: 13px;display: block;padding: 0;line-height: 25px;letter-spacing: 1px;word-break: break-all;border-radius: 10px 10px 0 0;}
+fieldset.queserror { border: 1px solid #f00; font-size: 12px; padding: 2px; margin-bottom: 1px; }
+fieldset.quesborder td, fieldset.queserror td { line-height: 16px; }
+fieldset.quesborder em, fieldset.queserror em { font-style: normal; font-weight: bold; position: absolute; left: 20px; }
+fieldset .ques-source { font-size: 12px; font-style: italic; }
+fieldset.thiserror1 { border: 1px solid #f00; }
+fieldset.thiserror1 legend { border: 4px solid #f00; }
+fieldset.thiserror2 { border: 1px solid #ADCD3C; }
+fieldset.thiserror2 legend { border: 4px solid #ADCD3C; }
+fieldset.thisques { border: 1px solid blue; }
+fieldset.thison { border: 1px solid #A9C9E2; }
+fieldset.thison div.border { border: 1px solid #ADCD3C; background-color: #F2FDDB; }
+fieldset, img { border: 0 none; }
+table.thison { border: 1px solid #00F; }
+table.thiserr { border: 1px solid #F00; }
+fieldset.thisvip1 { border: 1px solid #00F; }
+fieldset.thisvip1 legend { border: 4px solid #00F; }
+fieldset.status17 { border: 1px solid #ff00ff; }
+fieldset.status17 legend { border: 4px solid #ff00ff; }
+.selectoption { vertical-align: middle; font-size: 14px; padding: 2px; }
+.selectoption:hover { color: #EA8511; }
+.selectoption label { padding: 4px; }
+fieldset.quesbordere { border: 2px dotted #f00; }
+.answer { border: 1px dotted #ffffff; }
+ol.answer li, ul.answer li { padding: 1px; font-size: 14px; }
+ol.answer li:hover { background: #f2f2f2; }
+.collapseContainerPanel { border: 0; }
+.collapsePanelHeader { height: 30px; font-weight: bold; padding: 6px 0 0 0; }
+.collapseHeaderContent { float: left; padding-left: 5px; }
+.collapseContent { margin: 0; padding: 0; border: 1px solid #ccc; border-top: 0; }
+.pt0 { padding: 2px 0 5px 0; font-size: 14px; font-family: "黑体",sans-serif; font-weight: 700; }
+.pt1 { overflow: hidden; zoom: 1; clear: both;  font-size: 14px; position: relative; }
+fieldset.quesborder .pt1 em { position: static; }
+.pt1 a { font-size: 12px; font-style: italic; }
+.pt1 img { position: relative; }
+/*.pt2 { padding: 0px 20px 20px 20px; }*/
+.pt3, .pt4, .pt5, .pt6, .pt7 { clear: both; zoom: 1; position: relative; }
+.pt8 a:link, .pt8 a:visited { margin-right: 10px; padding: 2px 5px; }
+.pt8 a:hover { background: #fc0; }
+.pt9 { border: 0 none; color: #999999; font-size: 12px; }
+.fieldtip { height: 36px; line-height: 36px; background-color: #f4f4f4; border-top: 1px solid #dadada; padding: 0 20px; color: #666666; border-radius: 0 0 10px 10px; position: relative; font-size: 12px; }
+li.ques-add, div.ques-add { border-color: #ffe3c2; }
+li.ques-add:hover, div.ques-add:hover { box-shadow: 0 0 0 3px #ffe3c2; }
+li.ques-add .fieldtip, div.ques-add .fieldtip { background-color: #fff0bb; }
+li.ques-add fieldset.quesborder, div.ques-add fieldset.quesborder { background-color: #fffae9; }
+li.ques-add .add, div.ques-add .add { background-color: #fdcb91; }
+.newFieldtip .pt1, .newFieldtip .pt2, .newFieldtip .pt3, .newFieldtip .pt4, .newFieldtip .pt5, .newFieldtip .pt6, .newFieldtip .pt7, .newFieldtip .pt8, .newFieldtip.pt9, .newFieldtip + .fieldtip { padding: 0; }
+
+.fieldtip-left { float: left; }
+.fieldtip-left span { margin-right: 10px; }
+.fieldtip-right { float: right; }
+.fieldtip-right a { margin-left: 15px; display: inline-block; color: #666666; }
+.fieldtip-right .btn { color: #fff; }
+.fieldtip-right a i { margin-right: 3px; }
+
+/*填空题*/
+div.quizPutTag { display: inline-block; *display: inline; padding: 3px 10px 1px 10px; margin: 0 3px; font-size: 14px; min-width: 1em; min-height: 16px; line-height: 18px; height: auto; border-bottom: 1px solid #0033FF; text-decoration: none; zoom: 1; color: #127176; word-break: break-all; }
+div.quizPutTag:hover { color: #f60; }
+div.quizPutTag img { cursor: pointer; width: 200px; margin-left: 10px; }
+.sanwser { padding: 4px 10px; margin: 0px; border: 1px solid #ADCD3C; background-color: #F2FDDB; color: #000; display: none; }
+/*答案*/
+.selectoption label.s, div.s { border: 1px solid #91cbed; background-color: #deeeff; display: inline-block; }
+.selectoption label.s.sh, div.s.sh { margin: 1px; border: none; background: none; }
+
+
+/*试题解析页*/
+.detail-item, .ques-related { text-align: left; border: 1px solid #dadada; border-radius: 10px; }
+div.qtitle { padding: 10px; border-bottom: 1px solid #ccc; padding-left: 0px; margin-bottom: 10px; padding-bottom: 0; }
+div.qtitle h3 { padding: 10px; border-bottom: 1px solid #1579e5; display: inline-block; font-size: 16px; font-weight: bolder; color: #1579e5; margin-right: 20px; padding-bottom: 5px; }
+div.qtitle a { padding: 5px 20px; color: #6e6e6e; display: inline-block; }
+div.qtitle a.active { font-weight: bolder; color: #ffffff; background-color: #2489f6; border-radius: 5px 5px 0 0; }
+
+.ques-related ul { margin: 0; display: none; }
+.ques-related ul li { line-height: 24px; margin-bottom: 5px; }
+.ques-related ul li a { display: inline-block; width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #333333; }
+.ques-related ul li a:hover { text-decoration: underline; }
+
+.ques-comments { text-align: left; }
+.ques-comments h3 { font-size: 16px; }
+.ques-comments textarea { width: 100%; height: 122px; border-color: #dadada; border-radius: 10px; margin: 10px 0; padding: 5px 0; }
+
+.discuss { background: #fff; text-align: left; border: 1px solid #dadada; border-radius: 10px; }
+.discuss dt { height: 33px; line-height: 34px; padding: 2px 10px; border-bottom: 1px solid #dadada; }
+.discuss dd { min-height: 80px; _height: 80px; padding: 5px 10px; }
+.discuss dd li { padding: 10px 0; }
+.discuss dd li img.hp { float: left; width: 48px; height: 48px; padding: 1px; border: 1px solid #dadada; margin-right: 10px; }
+.discuss dd span.lou { float: right; }
+.discuss dd span.date { font-weight: normal; color: #aaa; }
+.discuss dd a { font-weight: normal; padding: 0 3px; }
+.discuss dd p { margin: 5px 0; margin-left: 63px; line-height: 20px; }
+.discuss dt strong { font-size: 14px; font-weight: bolder; color: #333; }
+
+/*题目序号隐藏*/
+.qseq{
+    display: none;
+}
